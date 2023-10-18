@@ -1,0 +1,14 @@
+.person {
+  display: flex;
+}
+
+.personInputContainer {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}

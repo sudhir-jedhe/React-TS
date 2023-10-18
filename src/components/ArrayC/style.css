@@ -1,0 +1,33 @@
+.actionContainer {
+  display: flex;
+}
+
+.arrayButtonContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: grey;
+  padding: 5px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+.arrayInputContainer {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.updateArray {
+  border: 2px solid rgb(212, 211, 211);
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}

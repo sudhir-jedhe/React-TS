@@ -1,0 +1,34 @@
+.todoListContainer {
+  border: 2px solid grey;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.listContainer {
+  display: flex;
+  border: 1px solid lightgrey;
+  margin: 5px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+}

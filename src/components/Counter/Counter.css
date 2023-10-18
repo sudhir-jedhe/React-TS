@@ -1,0 +1,37 @@
+.counterContainer {
+  display: flex;
+  border: 2px solid green;
+
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  background-color: aqua;
+}
+
+.labelContainer {
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  color: cornsilk;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: crimson;
+  padding: 5px;
+  box-sizing: border-box;
+}
