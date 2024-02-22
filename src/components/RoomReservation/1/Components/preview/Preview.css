@@ -1,0 +1,31 @@
+.previewRoot {
+    flex-grow: 0.3;
+    min-width: 150px;
+    position: sticky;
+    top: 50px;
+  }
+  
+  table,
+  td,
+  th {
+    border: 1px solid;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  button {
+    padding: 1rem;
+    background-color: rgb(52, 52, 141);
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(46, 46, 238);
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  

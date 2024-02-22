@@ -1,0 +1,16 @@
+.tabRoot {
+    padding: 1rem;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .tabRoot:focus {
+    outline: none;
+  }
+  
+  .activeTab {
+    font-weight: bold;
+    border-bottom: 2px solid green;
+  }
+  

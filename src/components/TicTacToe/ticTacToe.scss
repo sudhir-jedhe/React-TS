@@ -1,0 +1,14 @@
+.gridRow {
+  display: flex;
+}
+
+.gridCol {
+  display: flex;
+  font-size: 48px;
+  border: 1px solid #ddd;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

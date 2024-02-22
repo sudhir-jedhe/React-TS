@@ -1,0 +1,23 @@
+import { useState } from 'react';
+import styles from './Styles/Accordion.module.css';
+
+const Accordion = ({ content }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleAccordionHandler = (event) => {
+    event.preventDefault();
+    setIsOpen((prevValue) => !prevValue);
+  };
+  return (
+    <section className={styles.accordWrapper}>
+      <button className={styles.accordToggle} onClick={toggleAccordionHandler}>
+        <p>{content.title}</p>
+        <p className={styles.accordBody}>{isOpen ? '-' : '+'}</p>
+      </button>
+      {isOpen && (
+        <section className={styles.accordBody}>{content.value}</section>
+      )}
+    </section>
+  );
+};
+
+export default Accordion;

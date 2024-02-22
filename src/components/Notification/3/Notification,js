@@ -1,0 +1,68 @@
+import { useToastCtx } from './ToastContext';
+import { useEffect, useRef, useCallback, useState } from 'react';
+
+export default function ({ type, message, id, timer = 2000 }) {
+  const { dispatch } = useToastCtx();
+  const timerRef = useRef({ ref: null, timestamp: null,running: null });
+  const [width, setWidth] = useState(0);
+  const removeNotification = useCallback(() => {
+    dispatch({
+      type: 'REMOVE',
+      payload: {
+        id,
+      },
+    });
+  }, []);
+
+  useEffect(() => {
+    timerRef.current = {
+      ref: setTimeout(removeNotification, timer),
+      timestamp: new Date().getTime(),
+      running: true
+    };
+   
+  }, []);
+
+useEffect(()=>{
+    const intervalId = setInterval(() => {
+      if(!timerRef.current.running) return;
+      setWidth((width) => {
+        return width + 1;
+      });
+    }, timer / 100);
+    return () => clearInterval(intervalId);
+},[])
+
+
+  const onPauseTimer = () => {
+    clearTimeout(timerRef.current.ref);
+    const timestamp = new Date().getTime();
+    timerRef.current = {...timerRef.current,pausedOn:timestamp,  running: false};
+  };
+
+  const onResumeTimer = () => {
+    const timestamp = new Date().getTime();
+    const timeUsed = timerRef.current.pausedOn - timerRef.current.timestamp;
+    timerRef.current = {
+      ref: setTimeout(
+        removeNotification,
+        timer - timeUsed
+      ),
+      timestamp,
+      running: true
+    };
+  };
+
+  return (
+    <div
+      className="notif"
+      onMouseEnter={onPauseTimer}
+      onMouseLeave={onResumeTimer}
+    >
+      <p className="message">{message}</p>
+      <div className="progress">
+        <div className="completed" style={{ width: `${width}%` }}></div>
+      </div>
+    </div>
+  );
+}

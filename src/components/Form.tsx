@@ -9,7 +9,7 @@ function useLocalStorage(
     if (valInLocalStorage) {
       return JSON.parse(valInLocalStorage);
     }
-    return typeof defaultVal === "function" ? defaultVal() : defaultVal;
+    return typeof defaultVal === "function" ?  defaultVal() : defaultVal;
   });
   useEffect(() => {
     window.localStorage.setItem(key, JSON.stringify(state));

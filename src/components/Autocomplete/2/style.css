@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  main:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #graphic {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #graphic img {
+    max-width: 100%;
+  }
+  
+  #content {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #content h1,
+  #content p {
+    margin-top: 0px;
+  }
+  
+  #content a,
+  #content p {
+    color: #7b7979;
+  }
+  
+  #content a {
+    font-weight: bold;
+  }
+  
+  #content a:hover {
+    color: #414141;
+    cursor: pointer;
+  }
+  
+  .payment_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid green;
+    padding: 2rem 4rem;
+  }
+  
+  .img_container > img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background-color: #11aa33;
+    color: #fff;
+  }
+  
+  .auto_complete_container {
+    width: 100%;
+    /* border: 1px solid black; */
+    position: relative;
+  }
+  
+  .auto_complete_search {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid;
+    font-size: 1.25rem;
+  }
+  
+  .auto_complete_search:focus {
+    border-color: #11aa33;
+  }
+  
+  .suggestion_list {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .suggestion_item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border: 0.1px solid grey;
+    cursor: pointer;
+    background-color: whitesmoke;
+  }

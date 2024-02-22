@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  .wrapper {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .progress-wrapper {
+    width: 100%;
+    height: 5px;
+    border: #a29bfe solid grey;
+    border-radius: 10px;
+  }
+  .progress-bar {
+    background-color: #a29bfe;
+    height: 5px;
+  }

@@ -1,0 +1,29 @@
+.gridRoot {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+  }
+  
+  .loadMoreBtn {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 130px;
+  }
+  
+  .loadMoreBtn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    border: 1px solid gray;
+  }
+  
+  .loadMoreBtn:disabled::before {
+    content: "⏳ ";
+  }
+  

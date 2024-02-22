@@ -1,0 +1,87 @@
+.tabsRoot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 1px solid green;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+  }
+  
+  .safeSearchRoot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 180px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-color: lightgray;
+  }
+  
+  .safeSearchLabel {
+    z-index: 9;
+    background-color: white;
+    padding: 0.5em;
+    /* border: 1px solid gray; */
+    border-radius: 4px 0px 0px 4px;
+    border-right: none;
+  }
+  
+  .safeSearchIndicatorRoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    /* border: 1px solid gray; */
+    /* overflow: hidden; */
+    flex-grow: 1;
+    color: white;
+  }
+  
+  .safeSearchStatusOff {
+    background-color: red;
+    animation: slideIn 0.2s ease-in forwards;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0.5em;
+  }
+  
+  .safeSearchStatusOn {
+    background-color: green;
+    border-radius: 0px 5px 5px 0px;
+    animation: slideOut 0.2s ease-in forwards;
+    padding: 0.5em;
+  }
+  
+  @keyframes slideIn {
+    from {
+      translate: -80px;
+    }
+    to {
+      translate: 0px;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      translate: -80px;
+    }
+    to {
+      translate: 0px;
+    }
+  }
+  
+  body.modal-open {
+    overflow: hidden;
+    filter: blur(8px);
+  }
+  .dialogRoot {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    box-shadow: 5px 10px 20px #888888;
+  }
+  

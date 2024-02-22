@@ -1,0 +1,115 @@
+* {
+    color: white;
+  }
+  body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    background: #151515;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .directory {
+    width: 300px;
+    margin: 40px 0px 0px 40px;
+    border: 1px solid #979797;
+  }
+  .directory .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.8);
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .title svg {
+    margin-right: 5px;
+  }
+  .title p {
+    margin: 0;
+    font-weight: bold;
+  }
+  .title p:hover {
+    color: #00a8ff;
+  }
+  .controls {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .controls > span {
+    margin-right: 10px;
+  }
+  .controls > span svg {
+    fill: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease-in-out;
+  }
+  .controls > span svg:hover {
+    fill: white;
+  }
+  .controls > span:last-child {
+    margin: 0;
+  }
+  .content {
+    padding: 10px 16px;
+  }
+  .node {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+  .node .entry {
+    display: flex;
+    justify-content: space-between;
+  }
+  .node .entry .controls {
+    flex: 1;
+    opacity: 0;
+    justify-content: flex-end;
+  }
+  .node .entry .title p {
+    font-weight: 400;
+  }
+  .node .entry .title input {
+    color: #151515;
+    border: 1px solid transparent;
+  }
+  .node .entry .title .error {
+    position: relative;
+  }
+  .node .entry .title .error input {
+    border: 1px solid #c23616;
+  }
+  .node .entry .title .error > div {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    padding: 5px;
+    border-radius: 4px;
+    background: #c23616;
+    color: white;
+    width: max-content;
+  }
+  .node .entry:hover .controls {
+    opacity: 1;
+  }
+  .node:first-child {
+    margin-top: 5px;
+  }
+  .node .node_contents {
+    display: flex;
+    flex-direction: column;
+  }
+  

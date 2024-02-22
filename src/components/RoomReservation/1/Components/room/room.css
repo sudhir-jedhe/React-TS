@@ -1,0 +1,59 @@
+.roomRoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .roomRoot:hover .content {
+    background-color: #515e6e;
+    cursor: pointer;
+  }
+  
+  .disabled {
+    cursor: not-allowed;
+  }
+  
+  .roomGroupRoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .outOfCredits {
+    color: red;
+  }
+  
+  .reserved {
+    color: blue;
+  }
+  
+  .available {
+    color: green;
+  }
+  
+  .roomContentRoot {
+    border: 1px solid gray;
+    max-width: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5em;
+    background-color: #303740;
+    padding: 0.2em;
+    border-radius: 5px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  
+  .circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #303740;
+  }
+  

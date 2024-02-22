@@ -1,0 +1,28 @@
+.progressBarContainer {
+  .progressBar {
+    background-color: #ddd;
+
+    &.round {
+      border-radius: 6px;
+    }
+
+    &.square {
+      border-radius: 0;
+    }
+
+    .progressBarBar {
+      width: 0%;
+      height: 4px;
+      background-color: blue;
+      border-radius: inherit;
+
+      &.animationStart {
+        transition: 0.3s width ease;
+      }
+    }
+  }
+
+  .progressBarLabel {
+    display: block;
+  }
+}

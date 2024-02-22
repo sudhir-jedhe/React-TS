@@ -1,0 +1,62 @@
+.videoPlayerRoot {
+    position: relative;
+    transition: transform 0.2s ease-in;
+    flex: 0.5 1 auto;
+  }
+  
+  .videoPlayerRoot:hover {
+    transform: scale(104%);
+  }
+  
+  .playerControlsRoot {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .controlButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    transition: transform 0.2s ease-in;
+  }
+  
+  .controlButton:hover {
+    transform: scale(1.1);
+  }
+  
+  .videoPlayer {
+    height: 25vh;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+  }
+  
+  .videoPlayerLoading {
+    position: absolute;
+    color: white;
+    mix-blend-mode: difference;
+    top: 5px;
+    left: 50px;
+    background-color: transparent;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+  }
+  .videoPlayerLoading::before {
+    content: "⏳ ";
+  }
+  

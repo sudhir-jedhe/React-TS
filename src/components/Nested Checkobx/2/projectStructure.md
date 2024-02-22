@@ -1,0 +1,12 @@
+my-app/
+  src/
+    components/
+      CheckboxNode.js
+      CheckboxTree.js
+    utils/
+      api.js
+    App.js
+    index.js
+    dataModel.js
+    store.js
+  package.json

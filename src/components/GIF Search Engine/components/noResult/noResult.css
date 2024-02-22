@@ -1,0 +1,22 @@
+.noResultRoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchNoResult {
+    margin: 1em;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .noResultLabel {
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    background-color: rgb(119, 88, 88);
+    width: 300px;
+    border-radius: 0px 0px 5px 5px;
+  }
+  

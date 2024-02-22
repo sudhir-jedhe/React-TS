@@ -25,8 +25,8 @@ function App() {
       <Fetch />
       <Parent />
       <Array />
-      <Person />
-      <Counter /> */}
+      <Person /> */}
+      {/* <Counter /> */}
       <TodoList />
     </div>
   );

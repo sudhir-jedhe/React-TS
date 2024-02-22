@@ -5,7 +5,7 @@ import DeleteListItemButton from "./DeleteListItemButton";
 
 export default function ListItem(props) {
   return (
-    <div>
+      <div>
       <ul className="list">
         <li className="list-item">
           <React.Fragment>
