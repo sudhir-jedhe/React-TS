@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .country__name{
+    border: 3px solid grey;
+    padding: 5px 25px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  .selected__option{
+    border-color: blue;
+  }
+  
+  .selected__correct{
+    border-color: green;
+  }
+  
+  .selected__incorrect {
+    border-color: red;
+  }
+  

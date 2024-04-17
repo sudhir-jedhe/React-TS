@@ -1,0 +1,8 @@
+//index.module.css
+.item {
+    display: flex;
+  }
+  
+  .inlineItem {
+    display: inline-flex;
+  }

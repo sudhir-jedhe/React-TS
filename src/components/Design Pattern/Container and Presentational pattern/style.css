@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.27);
+  padding: 10px;
+}
+
+.hero-image {
+  flex: 0 100px;
+}
+
+.hero-image > img {
+  width: 100px;
+  height: 200px;
+}
+
+.details {
+  padding: 20px;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.details > span {
+  flex: 0 100%;
+  line-height: 30px;
+}

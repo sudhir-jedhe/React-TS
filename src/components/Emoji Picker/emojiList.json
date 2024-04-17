@@ -1,0 +1,8 @@
+[
+    { "char": "😊", "keywords": ["happy", "smile", "joy"] },
+    { "char": "😢", "keywords": ["sad", "cry", "tear"] },
+    { "char": "😐", "keywords": ["meh", "neutral", "indifferent"] },
+    { "char": "😃", "keywords": ["excited", "happy", "thrilled"] },
+    { "char": "😴", "keywords": ["sleepy", "tired", "nap"] }
+  ]
+  

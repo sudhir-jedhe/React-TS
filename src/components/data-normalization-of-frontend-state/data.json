@@ -1,0 +1,75 @@
+{
+    "products": {
+      "byId": {
+        "1": {
+          "id": 1,
+          "name": "Product 1",
+          "price": 10.99,
+          "description": "A great product",
+          "category": "Electronics",
+          "inventory": 5
+        },
+        "2": {
+          "id": 2,
+          "name": "Product 2",
+          "price": 20.99,
+          "description": "Another great product",
+          "category": "Clothing",
+          "inventory": 10
+        }
+      },
+      "allIds": ["1", "2"]
+    },
+    "orders": {
+      "byId": {
+        "1": {
+          "id": 1,
+          "customerId": 1,
+          "productId": 1,
+          "quantity": 2,
+          "status": "Pending"
+        },
+        "2": {
+          "id": 2,
+          "customerId": 2,
+          "productId": 2,
+          "quantity": 1,
+          "status": "Complete"
+        }
+      },
+      "allIds": ["1", "2"]
+    },
+    "customers": {
+      "byId":
+           {
+        "1": {
+          "id": 1,
+          "name": "John Doe",
+          "email": "johndoe@example.com"
+        },
+        "2": {
+          "id": 2,
+          "name": "Jane Doe",
+          "email": "janedoe@example.com"
+        }
+      },
+      "allIds": ["1", "2"]
+    },
+    "payments": {
+      "byId": {
+        "1": {
+          "id": 1,
+          "orderId": 1,
+          "amount": 21.98,
+          "status": "Complete"
+        },
+        "2": {
+          "id": 2,
+          "orderId": 2,
+          "amount": 20.99,
+          "status": "Pending"
+        }
+      },
+      "allIds": ["1", "2"]
+    }
+  }

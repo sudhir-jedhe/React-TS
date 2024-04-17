@@ -1,0 +1,28 @@
+.board{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 20px;
+  }
+  
+  .button{
+    padding: 10px 20px;
+    border: 1px solid #414141;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .selectedOption{
+    border: 1px solid blue;
+  }
+  
+  .correctSelectedOption{
+    border: 1px solid #66cc99;
+  }
+  
+  .errorSelectedOption{
+    border: 1px solid red;
+  }
