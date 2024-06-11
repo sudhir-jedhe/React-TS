@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  
+  .boxes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding: 50px;
+    width: fit-content;
+  }
+  
+  .box{
+    width: 80px;
+    height: 80px;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .box.visible{
+    border: 1px solid black;
+    cursor:pointer
+  }
+  
+  .box.hidden{
+    opacity: 0;
+    cursor: initial;
+  }
+  
+  .box.selected{
+    background-color: #0bcc59;
+    cursor: not-allowed;
+  }
