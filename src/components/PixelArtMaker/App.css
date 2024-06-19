@@ -1,0 +1,36 @@
+.app {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .controls label {
+    margin-right: 10px;
+  }
+  
+  .controls input {
+    width: 50px;
+  }
+  
+  .pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(16, 20px); /* Default grid columns */
+    gap: 1px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+  .pixel {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+  }
+  
+  .pixel:hover {
+    background-color: #333; /* Change color on hover */
+  }
+  

@@ -1,0 +1,46 @@
+.timeline-container {
+    width: 100%;
+  }
+  
+  .timeline {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff; /* Example marker color */
+    transform: translate(-50%, -50%);
+  }
+  
+  .timeline-left .timeline-marker {
+    right: auto;
+    left: 0;
+  }
+  
+  .timeline-right .timeline-marker {
+    left: auto;
+    right: 0;
+  }
+  
+  .timeline-content {
+    margin-left: 20px;
+  }
+  
+  .timeline-item p {
+    margin-bottom: 0;
+  }
+  

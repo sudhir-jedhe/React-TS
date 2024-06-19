@@ -1,0 +1,24 @@
+.step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .step-content {
+    margin-top: 10px;
+    text-align: center;
+  }
+  

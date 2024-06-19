@@ -1,0 +1,22 @@
+/* Breadcrumb.css */
+.breadcrumb {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .separator {
+    margin: 0 8px;
+    color: #aaa;
+  }
+  
+  /* Optionally, you can add styles for expandable items */
+  .breadcrumb-item.expandable {
+    /* Your styles for expandable items */
+  }
+  

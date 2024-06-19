@@ -1,0 +1,36 @@
+.custom-pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .custom-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .custom-button:hover:not(.disabled) {
+    background-color: #0056b3;
+  }
+  
+  .custom-dropdown {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,49 @@
+// Letter by Letter Search Filtering | REACT
+
+import React, { useState } from 'react';
+
+const SearchFilter = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredItems, setFilteredItems] = useState([]);
+
+  const items = [
+    'Apple',
+    'Banana',
+    'Cherry',
+    'Durian',
+    'Elderberry',
+    'Fig',
+    'Grapes',
+    'Honeydew',
+    'Jackfruit',
+    'Kiwi',
+  ];
+
+  const handleSearchChange = (e) => {
+    const value = e.target.value.toLowerCase();
+    setSearchTerm(value);
+    const filtered = items.filter(item =>
+      item.toLowerCase().includes(value)
+    );
+    setFilteredItems(filtered);
+  };
+
+  return (
+    <div>
+      <h2>Letter by Letter Search Filtering</h2>
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
+      <ul>
+        {filteredItems.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default SearchFilter;

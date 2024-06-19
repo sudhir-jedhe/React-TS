@@ -1,0 +1,28 @@
+.multi-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .filters {
+    flex: 1 1 300px;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .results {
+    flex: 1 1 calc(100% - 320px);
+  }
+  
+  .results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .results li {
+    margin-bottom: 10px;
+  }
+  

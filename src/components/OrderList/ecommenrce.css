@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+  }
+  
+  .navbar ul li:hover {
+    background-color: #c0c0c0;
+  }
+  
+  /*********************************************/
+  /* EcommercePage.css */
+
+.ecommerce-page {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main-content {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .ecommerce-page {
+      flex-direction: row;
+    }
+    .main-content {
+      flex: 1;
+      margin-left: 20px;
+    }
+  }
+  

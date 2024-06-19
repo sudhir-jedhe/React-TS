@@ -11,7 +11,9 @@ class ScrollIndicator extends Component {
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
 
-    //Full height
+    //Full height.
+
+    
     const height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
